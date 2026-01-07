@@ -29,4 +29,3 @@ services:
       DB_PASS: strongpassword
 volumes:
   db_data:
-
