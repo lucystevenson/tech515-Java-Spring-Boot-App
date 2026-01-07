@@ -2,7 +2,8 @@
 FROM maven:3.9.6-eclipse-temurin-17 AS build
 
 WORKDIR /app
-COPY . .
+# copy the project folder content into /app
+COPY LibraryProject2/ .   
 RUN mvn clean package -DskipTests
 
 # Run stage (lighter image)
